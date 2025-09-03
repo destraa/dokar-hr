@@ -15,15 +15,15 @@ const CTA: React.FC = () => {
           <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-8 text-white">
             <div className="bg-white/10 p-6 rounded-lg">
                 <h3 className="font-semibold">Kontak Sales</h3>
-                <p className="mt-2 text-indigo-200">[Nomor Telepon Anda]</p>
+                <p className="mt-2 text-indigo-200">+62 21 1234 5678</p>
             </div>
              <div className="bg-white/10 p-6 rounded-lg">
                 <h3 className="font-semibold">Email</h3>
-                <p className="mt-2 text-indigo-200">[Email Sales Anda]</p>
+                <p className="mt-2 text-indigo-200">sales@dokarhr.com</p>
             </div>
              <div className="bg-white/10 p-6 rounded-lg">
                 <h3 className="font-semibold">Website</h3>
-                <p className="mt-2 text-indigo-200">[Website Anda]</p>
+                <p className="mt-2 text-indigo-200">www.dokarhr.com</p>
             </div>
           </div>
         </div>

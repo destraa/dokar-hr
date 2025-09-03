@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ADDONS } from '../constants';
 
@@ -21,7 +22,7 @@ const Addons: React.FC = () => {
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {ADDONS.map((addon) => (
-            <div key={addon.name} className="bg-slate-50/70 border border-slate-200 rounded-xl p-8 flex flex-col">
+            <div key={addon.name} className="bg-slate-50/70 border border-slate-200 rounded-xl p-8 flex flex-col transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
               <h3 className="text-xl font-bold text-slate-900">{addon.name}</h3>
               <p className="mt-2 text-sm font-semibold text-indigo-600">{addon.price}</p>
               <p className="mt-4 text-slate-600 flex-grow">{addon.description}</p>

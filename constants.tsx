@@ -1,32 +1,6 @@
+
 import React from 'react';
 import type { Plan, FeatureCategory, Addon } from './types';
-
-export const CheckIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    className={`w-6 h-6 text-indigo-500 ${className}`}
-  >
-    <path
-      fillRule="evenodd"
-      d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.06-1.06l-3.103 3.104-1.533-1.533a.75.75 0 00-1.06 1.06l2.064 2.063a.75.75 0 001.06 0l3.64-3.64z"
-      clipRule="evenodd"
-    />
-  </svg>
-);
-
-export const MinusIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 20 20"
-    fill="currentColor"
-    className={`w-5 h-5 text-slate-400 ${className}`}
-  >
-    <path d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-  </svg>
-);
-
 
 export const PLANS: Plan[] = [
   {
@@ -136,4 +110,37 @@ export const ADDONS: Addon[] = [
             "Tracking status pelamar",
         ]
     }
+];
+
+export const FAQS = [
+  {
+    question: 'Apakah ada biaya tambahan selain biaya langganan bulanan?',
+    answer:
+      'Tidak ada biaya tersembunyi. Harga yang tertera adalah harga final per karyawan per bulan, belum termasuk PPN 11%. Untuk modul tambahan (add-on), biayanya bersifat tetap (fixed) dan tidak dihitung per karyawan.',
+  },
+  {
+    question: 'Bagaimana proses implementasi dan onboarding?',
+    answer:
+      'Tim kami akan membantu Anda selama proses implementasi, mulai dari setup awal, impor data karyawan, hingga pelatihan untuk admin HR dan karyawan. Kami memastikan transisi ke Dokar HR berjalan mulus.',
+  },
+  {
+    question: 'Apakah Dokar HR bisa diintegrasikan dengan sistem payroll yang sudah kami gunakan?',
+    answer:
+      'Saat ini, kami menyediakan fitur ekspor data absensi, lembur, dan kasbon yang kompatibel dengan sebagian besar software payroll. Untuk integrasi API langsung, silakan hubungi tim sales kami untuk mendiskusikan kemungkinan dan ketersediaannya.',
+  },
+  {
+    question: 'Apakah data perusahaan dan karyawan kami aman?',
+    answer:
+      'Keamanan data adalah prioritas utama kami. Kami menggunakan infrastruktur cloud terpercaya dengan standar keamanan tinggi, enkripsi data, dan praktik terbaik lainnya untuk melindungi semua data Anda.',
+  },
+  {
+    question: 'Apakah ada minimum jumlah karyawan untuk berlangganan?',
+    answer:
+      'Ya, kami menerapkan minimum 10 karyawan untuk semua paket berbayar (Starter, Professional, dan Enterprise) untuk memastikan Anda mendapatkan manfaat maksimal dari platform kami.',
+  },
+   {
+    question: 'Bisakah saya mencoba Dokar HR sebelum memutuskan untuk berlangganan?',
+    answer:
+      'Tentu saja! Kami menyediakan sesi demo gratis di mana tim kami akan menunjukkan semua fitur Dokar HR dan menjawab pertanyaan spesifik Anda. Silakan hubungi kami untuk menjadwalkan sesi demo.',
+  },
 ];

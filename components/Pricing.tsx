@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { PLANS, FEATURE_CATEGORIES, CheckIcon, MinusIcon } from '../constants';
+import { PLANS, FEATURE_CATEGORIES } from '../constants';
+import { CheckIcon, MinusIcon } from './icons';
 import type { Plan } from '../types';
 
 const PlanCard: React.FC<{ plan: Plan }> = ({ plan }) => {
